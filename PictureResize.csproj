@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+	<ItemGroup>
+		<Resource Include="Images/*" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="HPIM3481.JPG" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Resource Include="HPIM3481.JPG" />
+	</ItemGroup>
+</Project>

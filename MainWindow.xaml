@@ -1,0 +1,26 @@
+﻿<Window x:Class="PictureResize.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PictureResize"
+        mc:Ignorable="d"
+        Title="Egyszerű méretváltoztató animáció" Height="450" Width="800">
+	<Grid>
+		<!-- A keretet helyörzőként használjuk, és méretét úgy határozzuk meg, hogy a megnövelt
+			     kép éppen beleférjen a keretvonalon belül.-->
+		<Border Width="244" Height="184" BorderThickness="2" BorderBrush="#FFDE3333">
+			<!-- A kép vezérlőn látható képet tervezési időben a Properties ablak segítségével töltjük be. 
+				     Az Images könyvtárat a Visual Studio hozza létre, és bemásolja oda a képet, valamint
+				     beállítja, hogy fordításkor kerüljön az exe-be. A kép vezérlőhöz két eseménykezelőt 
+				     készítünk: egyet az egér érkezéséhez és egyet az egér távozásához.-->
+			<Image Height="150" Name="imKép" Stretch="Fill" Width="200"  
+							 MouseEnter="imKép_MouseEnter" 
+							 MouseLeave="imKép_MouseLeave" 
+							 HorizontalAlignment="Center" 
+							 VerticalAlignment="Center" 
+							 Source="HPIM3481.JPG" />
+		</Border>
+	</Grid>
+
+</Window>
